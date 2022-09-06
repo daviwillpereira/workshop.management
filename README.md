@@ -34,7 +34,7 @@
 <br>
 <br>
 
-<h1>The REST endpoints are described below.</h3>
+<h1>The REST endpoints are described below.</h1>
 ## SignUpController
 ### POST - register new user and send confirmation email
 
