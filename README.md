@@ -3,34 +3,38 @@
 <br> 
 
 <h3>Back-end Dependencies:</h3>
-
-## spring-boot-starter-data-jpa
-## spring-boot-starter-security
-## spring-boot-starter-web
-## spring-boot-starter-mail
-## spring-boot-starter-test
-## spring-boot-devtools
-## postgresql
+<ul>
+  <li>spring-boot-starter-data-jpa</li>
+  <li>spring-boot-starter-security</li>
+  <li>spring-boot-starter-web</li>
+  <li>spring-boot-starter-test</li>
+  <li>spring-boot-devtools</li>
+  <li>postgresql</li>
+</ul>
 
 <br>
 
 <h3>Currently Features:</h3>
+<ul>
+  <li>Spring Security:</li>
+  <ul>
+	  <li>UserDetails with SimpleGrantedAuthority authorization</li>
+	  <li>JSON Web Token (JWT) authentication with token confirmation via email</li>
+	  <li>DaoAuthenticationProvider Bean encompassing a bCryptPasswordEncoder and a UserDetailsService</li>
+	  <li>Roles Levels: ADMIN, USER</li>
+  </ul>
+  <li>Spring Data JPA:</li>
+  <ul>
+	  <li>Entities Mapping (AppUser, ConfirmationToken)</li>
+	  <li>PostGreSQL DB Connection</li>
+	  <li>Sequence Ids Generators</li>
+  </ul>
+</ul>
 
-## Spring Security:
-### UserDetails with SimpleGrantedAuthority authorization
-### JSON Web Token (JWT) authentication with token confirmation via email
-### DaoAuthenticationProvider Bean encompassing a bCryptPasswordEncoder and a UserDetailsService
-### Roles Levels: ADMIN, USER
-
-## Spring Data JPA
-### Entities Mapping (AppUser, ConfirmationToken)
-### PostGreSQL DB Connection
-### Sequence Ids Generators  
-### 
+<br>
 <br>
 
-<h3>The REST endpoints are described below.</h3>
-
+<h1>The REST endpoints are described below.</h3>
 ## SignUpController
 ### POST - register new user and send confirmation email
 
